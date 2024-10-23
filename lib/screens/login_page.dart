@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'welcome_page.dart'; 
+import 'home_screen.dart'; 
 
 
 
@@ -29,17 +29,13 @@ class _LoginScreenState extends State<LoginScreen> {
       showDialog(
         context: context,
         builder: (context) {
-          return AlertDialog(
-            title: const Text('Error'),
-            content: const Text('datos incorrectos'),
-            actions: <Widget>[
-              TextButton(
-                child: const Text('ok'),
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-              ),
-            ],
+          return const AlertDialog(
+            title: Text('Error'),
+            content: Text('datos incorrectos'),
+            
+                 
+                
+      
           );
         },
       );
@@ -49,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Login')),
+      appBar: AppBar(title: const Text('AppLogin')),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

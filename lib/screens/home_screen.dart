@@ -1,4 +1,3 @@
-import 'package:applogin/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -10,15 +9,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(username),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: () {
-              const LoginScreen();
-            },
-          ),
-        ],
+        title: const Text('AppLogin'),
+       
       ),
       body: const Center(
         child: Text('Bienvenido'),
